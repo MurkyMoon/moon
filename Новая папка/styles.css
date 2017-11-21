@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  min-width: 1300px;
+  height: 100%;
+}
+
+html {
+    position: relative;
+	min-height: 100%;
+}
+
+h1 {
+	font-size: 60px;
+	color: #fff;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 24px;
+	color: #000;
+	font-weight: bold;
+}
+
+p {
+	font-size: 24px;
+	color: #fff;
+	line-height: 1.7em;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  width: 100%;
+  display: table;
+  clear: both;
+}
+/*Хедер*/
+header{
+	background: #000;
+	height: 80px;
+}
+
+#logo {
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+	color: #fff;
+	padding-right: 115px;
+	line-height: 80px;
+}
+#logo img { padding-right: 5px; }
+
+nav {
+  float: left;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  width: 570px;
+}
+
+.menu > ul {
+	display: table;	
+	font-size: 0;
+}
+
+.menu > li {
+	display: inline-block;  
+	list-style: none;
+	font-size: 18px;
+}
+
+.menu > li > a {
+	text-decoration: none;
+	color: #fff;
+    display: inline-block;
+	line-height: 80px;
+	padding: 0 15px;
+}
+
+.menu > li > a:nth-clild(1) {padding-left: 0;}
+.menu > li > a:last-clild {padding-right: 0;}
+
+.menu > li > a:hover {
+	color: #ffc000;
+	line-height: 100%;
+}
+
+.button1 {
+  float: right;
+  color: #fff;
+  border: solid #ffc000 2px;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 120px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 7px 30px;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+/*Конец хедера*/
+/*Слайдер*/
+
+#slider {
+    width: 100%;
+	background: #121212;
+	display: inline-block;
+}
+
+#slider .slides {
+    margin: 0 auto;
+	float: left;
+	display: inline-block;
+}
+
+#slider #button {
+    display: inline-block;
+	padding-top: 360px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	float: left;
+}
+
+#slider a #display-left {
+	margin: 360px 220px 0 0;
+	float: left;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+}
+
+#display-right {
+    margin-left: 220px;
+    float: left;
+	display: inline-block;
+}
+
+#mySlides {
+	float: left;
+	display: inline-block;
+	width: 1170px;
+	height: 780px;
+	margin: 0 auto;
+}
+
+/*Конец Слайдера*/
+/*Про нас*/
+.about {
+	background: url(img/bg.png) no-repeat center top / cover;
+	height: 1010px;
+}
+
+.about h1 {
+	color: #000;
+	text-align: center;
+	padding-top: 110px;
+}
+.about p {color: #666;}
+
+.about iframe {
+    margin-left: 130px;
+	margin-top: 70px;
+}
+
+#slide1:checked ~ #controls label:nth-clild(2),
+#slide2:checked ~ #controls label:nth-clild(3),
+#slide3:checked ~ #controls label:nth-clild(4),
+#slide4:checked ~ #controls label:nth-clild(1){
+   background: url('img/scroll_right.png');
+   float: right;
+   margin-right: -30px;
+   display: block;
+}
+
+/*Конец Про нас*/
+/*Реклама*/
+.blurbs {
+	width: 100%;
+	background: #000;
+	height: 510px;
+}
+
+.forms {
+	padding-top: 115px;
+	width: 270px;
+	text-align: center;
+	float: left;
+	margin-right: 30px;
+}
+.forms:last-child {margin-right: 0;}
+
+.forms img {padding: 0 100px;}
+.forms p {
+	font-size: 14px;
+	margin-top: 20px;
+}
+/*Конец Рекламы*/
+/*Сервисы*/
+.services {height: 765px;}
+
+.text {
+	width: 570px;
+	margin: 95px auto 75px;
+	text-align: center;
+}
+.services  h1 {
+	color: #000;
+	margin-bottom: 40px;}
+
+.services  p {color: #666;}
+
+.icon {
+	width: 370px;
+    float: left;
+    height: 110px;
+}
+
+.icons img {
+	float: left; 
+	padding-left: 15px;
+}
+
+.icons .icon-text {
+    margin-left: 100px;
+	margin-top: -5px;
+}
+
+.icon p {
+	font-size: 14px;
+}
+
+.second-line {margin-top: 60px;}
+/*Конец Сервисов*/
+/*Team*/
+.team {
+    height: 925px;
+	background: #ffcf3c;
+}
+
+.teamtext {
+    width: 600px;
+	text-align: center;
+    margin: 0 auto;
+	padding-top: 80px;
+}
+
+.teamtext h1 {
+    color: #000;
+	font-weight: 400;
+}
+
+.teamtext p {
+    color: #000;
+	margin-top: 45px;
+	font-size: 18px;
+	line-height: 2em;
+}
+
+.members {margin-top: 70px;}
+
+.member {
+    height: 500px;
+	width: 370px;
+	border-radius: 10px;
+	background: #fff;
+	float: left;
+	margin-right: 30px;
+}
+
+.member:hover {background: #000;}
+
+.member3 {margin-right: 0;}
+
+.member .img {
+    height: 210px;
+	background: #000;
+	border-radius: 10px 10px 0 0;
+}
+
+.member .info {
+    text-align: center;
+	margin-top: 50px;
+}
+
+h4 {
+    color: #ffcf3c;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.member .info p {
+    height: 70px;
+    color: #666;
+	font-size: 14px;
+	margin: 25px 10px;
+}
+
+.social-icons {text-align: center; margin-bottom: 50px;}
+.social-icons a {margin-right: 20px;}
+
+/*End of Team*/
+/*Contact*/
+.contact {
+	background: #000;
+	min-height: 490px;
+}
+
+.contact .contact-text {
+	text-align: center;
+	padding-top: 90px;
+}
+
+.contact-text h1 {}
+.contact-text h1 span {color: #ffcf3c;}
+
+.contact-text p {
+	margin: 40px auto 60px;
+	font-size: 16px;
+}
+
+.contact form {
+   text-align: center;
+   margin-bottom: 120px;
+}
+
+#email {
+    padding: 10px;
+	border-radius: 40px 0 0 40px;
+	background: #fff;	
+	width: 555px;
+	font-size: 18px;
+	padding: 20px 40px;
+	margin-right: -5px;
+	border-color: #fff;
+}
+
+.contact form input[type='submit'] {
+    background: #ffcf3c;
+	border-radius: 0 40px 40px 0;
+	width: 220px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	padding: 20px 0;
+	border-color: #ffcf3c;
+	margin-bottom: 120px;
+}
+
+/*End of Contact*/
+/*Footer*/
+
+footer {
+   height: 70px;
+   background: #fff;
+   bottom: 0;
+   width: 100%;
+   position: absolute;
+}
+
+footer p {
+    float: left;
+    color: #000;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+footer p span {font-weight: bold;}
+
+footer .soc_icons {
+    height: 20px; 
+	width: 130px; 
+	float: right;
+	desktop: inline-block;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.soc_icons .soc_icon1 {
+     width: 21px; 
+	 height: 20px;
+     background: url('img/css_sprites.png') -10px -54px no-repeat;
+	 float: left;
+	 margin-right: 15px;
+}
+
+.soc_icons .soc_icon2 {
+     width: 21px; 
+	 height: 20px;
+     background: url('img/css_sprites.png') -55px -10px no-repeat;
+	 float: left;
+	 margin-right: 15px;
+}
+
+.soc_icons .soc_icon3 {
+     width: 21px; 
+	 height: 20px;
+     background: url('img/css_sprites.png') -10px -10px no-repeat;
+     float: left;	 
+}
+
+/*End of Footer*/
